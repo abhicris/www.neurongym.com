@@ -1,0 +1,528 @@
+/********************************************************************
+	CleanStart Stylesheet
+*********************************************************************/
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 18px;
+	background-color: black;
+	color: white;
+	
+	-webkit-font-smoothing: antialiased; /* Macintosh safari font fix */
+}
+
+/********************************************************************
+	Loader	
+*********************************************************************/
+
+#loader {
+	position: fixed;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	background-color: #212121;		
+}
+
+#loader img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -18px;
+	margin-top: -18px;
+}
+
+/********************************************************************
+	Typography, Helpers and Internal Classes
+*********************************************************************/
+h1 {
+	margin-bottom: 0px;
+	font-size: 72px;
+	line-height: 72px;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+p.logo {
+	margin-top: 0;
+	margin-bottom:0;
+	font-family: 'Yesteryear', cursive;
+	font-size: 70px;
+	text-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+
+img.logo {
+	margin-bottom:30px;
+	max-height:90px;
+}
+
+.sb-email, .sb-submit {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 18px;
+	font-weight: 200; /* Force weight and antialiasing for Safari */
+	-webkit-font-smoothing: antialiased;
+	font-style: normal;	
+}
+
+.sb-submit {
+	color: white;
+}	
+
+.centered {
+	text-align: center;
+}
+
+a,a:hover,.highlight {
+	color: #CF2200;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+::selection {
+	background: #CF2200;
+	color: white;
+}
+
+::-moz-selection {
+	background: #CF2200;
+	color: white;
+}
+
+.ancor-in,.ancor-out {
+	position: absolute;
+}
+
+.content-wrap {
+	background-color: rgba(0,0,0,.1); /* Placeholder for JQUERY overlay_bgopacity variable */
+}
+/********************************************************************
+	Text Shadows
+*********************************************************************/
+#countdown,
+#counttype,
+p.logo,
+.home-inner,.getintouch-inner,.subscribe-inner {
+	text-shadow: 1px 1px 0 rgba(0,0,0,.5);
+}
+.sb-submit {
+	text-shadow: 1px 1px 0 rgba(0,0,0,.2);
+}
+/********************************************************************
+	Sections
+*********************************************************************/
+
+.home,.getintouch,.subscribe {
+	position: relative;
+	padding: 0;
+	margin: 0;	
+}
+
+.home-inner,.getintouch-inner,.subscribe-inner {
+	padding: 0 10px;
+}
+
+.getintouch {
+	background-color: rgba(0,0,0,.8);
+	color: rgba(255,255,255,.9);
+}
+
+/********************************************************************
+	Social media buttons
+*********************************************************************/
+
+.social-icon {
+	display: inline-block;
+	margin: 10px 5px;
+	width: 64px;
+	height: 64px;
+	overflow: hidden;
+	
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	
+	-webkit-transition: background-position 0.2s ease-in-out;
+	   -moz-transition: background-position 0.2s ease-in-out;
+	     -o-transition: background-position 0.2s ease-in-out;
+	        transition: background-position 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+	background-position: 0 -64px;
+}
+
+.behance-icon    {background:url(../images/social/behance.png)}
+.delicious-icon  {background:url(../images/social/delicious.png)}
+.digg-icon       {background:url(../images/social/digg.png)}
+.dribbble-icon   {background:url(../images/social/dribbble.png)}
+.email-icon      {background:url(../images/social/email.png)}
+.evernote-icon   {background:url(../images/social/evernote.png)}
+.facebook-icon   {background:url(../images/social/facebook.png)}
+.flickr-icon     {background:url(../images/social/flickr.png)}
+.forrst-icon     {background:url(../images/social/forrst.png)}
+.googleplus-icon {background:url(../images/social/googleplus.png)}
+.instagram-icon  {background:url(../images/social/instagram.png)}
+.lastfm-icon     {background:url(../images/social/lastfm.png)}
+.linkedin-icon   {background:url(../images/social/linkedin.png)}
+.location-icon   {background:url(../images/social/location.png)}
+.metacafe-icon   {background:url(../images/social/metacafe.png)}
+.mobile-icon     {background:url(../images/social/mobile.png)}
+.myspace-icon    {background:url(../images/social/myspace.png)}
+.netvibes-icon   {background:url(../images/social/netvibes.png)}
+.newsvine-icon   {background:url(../images/social/newsvine.png)}
+.orkut-icon      {background:url(../images/social/orkut.png)}
+.phone-icon      {background:url(../images/social/phone.png)}
+.picasa-icon     {background:url(../images/social/picasa.png)}
+.pinterest-icon  {background:url(../images/social/pinterest.png)}
+.reddit-icon     {background:url(../images/social/reddit.png)}
+.rss-icon        {background:url(../images/social/rss.png)}
+.share-icon      {background:url(../images/social/share.png)}
+.skype-icon      {background:url(../images/social/skype.png)}
+.technorati-icon {background:url(../images/social/technorati.png)}
+.tumblr-icon     {background:url(../images/social/tumblr.png)}
+.twitter1-icon   {background:url(../images/social/twitter1.png)}
+.twitter2-icon   {background:url(../images/social/twitter2.png)}
+.vimeo-icon      {background:url(../images/social/vimeo.png)}
+.yahoo-icon      {background:url(../images/social/yahoo.png)}
+.yelp-icon       {background:url(../images/social/yelp.png)}
+.youtube-icon    {background:url(../images/social/youtube.png)}
+
+/********************************************************************
+	Up and Down Arrows
+*********************************************************************/
+
+.arrow-wrap {
+    position: absolute;
+	display: inline-block;     
+	height: 100px;
+    bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+a.arrow-down, a.arrow-up {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	cursor: pointer;
+	overflow: hidden;
+	
+	background-repeat: repeat-y;
+	background-color: rgba(0,0,0,.7);
+
+	-webkit-transition: background-position 0.5s ease-in-out, background-color 0.2s ease-in-out;
+	   -moz-transition: background-position 0.5s ease-in-out, background-color 0.2s ease-in-out;
+	     -o-transition: background-position 0.5s ease-in-out, background-color 0.2s ease-in-out;
+	        transition: background-position 0.5s ease-in-out, background-color 0.2s ease-in-out; 	         	
+
+	-webkit-border-radius: 3px 3px 0 0; 
+	   -moz-border-radius: 3px 3px 0 0; 
+	        border-radius: 3px 3px 0 0;
+}
+
+.arrow-wrap a:hover {
+	background-color: #CF2200;
+}
+
+a.arrow-up {
+	background-image: url(../images/arrow-up.png);
+}
+
+a.arrow-down {
+	background-image: url(../images/arrow-down.png);
+}
+
+a.arrow-up:hover {
+	background-position: 0 -100px;
+}
+
+a.arrow-down:hover {
+	background-position: 0 100px;
+}
+
+/********************************************************************
+	Subscription Form
+*********************************************************************/
+
+.sb-text p {
+	line-height: 30px;
+	margin-bottom: 10px;
+}	
+
+.sb-inner {
+	background: rgba(0,0,0,0.7);
+	padding: 20px 25px;
+	text-align: center;
+	
+	-webkit-border-radius: 5px; 
+	   -moz-border-radius: 5px; 
+	        border-radius: 5px;		
+}
+
+.sb-email, .sb-submit {
+	height: 30px;
+	padding: 0;
+	border: none;
+	
+	-webkit-border-radius: 3px; 
+	   -moz-border-radius: 3px; 
+	        border-radius: 3px; 
+}
+
+.sb-email {
+	width: 70%;
+	padding-left: 10px;	
+}
+
+.sb-submit {
+	width: 25%;
+	height: 30px;
+	margin-left: 15px;
+	background-color: #CF2200;
+}
+
+/********************************************************************
+	Vegas
+*********************************************************************/
+
+.vegas-overlay {
+	z-index: -1;
+}
+
+.vegas-overlay,
+.vegas-background {
+	-webkit-user-select: none;
+	 -khtml-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+}
+
+.vegas-background {
+	/*image-rendering: optimizeQuality;*/ /*This is an experimental technology (Gecko and Webkit)*/
+	-ms-interpolation-mode: bicubic;
+    max-width: none !important;
+	z-index: -2;
+}
+
+/********************************************************************
+	Twitter
+*********************************************************************/
+
+.twitter-ticker {
+	position: relative;
+	overflow-y: hidden;
+	height: 100px;
+}
+
+.tweet_list {
+	position: absolute;
+	overflow-y: hidden;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	
+}
+	
+.tweet_list li {
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 100px;
+	padding: 10px;
+	list-style-type: none;
+	font-size: 16px;
+}
+		
+.tweet_list .tweet_avatar {
+	padding-right: 10px;
+}
+		
+.tweet_list .tweet_avatar img {
+	vertical-align: middle;
+}
+
+/********************************************************************
+	Top Navigation Bar
+*********************************************************************/
+
+.top-header {
+	position: fixed;
+	top: -80px; /* Hide nagigation on load */
+	left: 0px;
+	right: 0px;
+	
+	background-color: rgba(0,0,0,.7);
+	z-index: 999;
+	height: 40px;
+}
+
+.top-header ul {
+	padding: 0;
+	margin: 0;
+}
+
+.top-header li {
+	display: inline-block;
+	list-style: none;
+}
+
+.top-header li a {
+	display: block;
+	width: 120px;
+	height: 30px;
+	padding: 10px 10px 0 10px;
+	
+	text-decoration: none;
+	text-transform: uppercase;
+	color: rgba(255,255,255,.9);
+
+	-webkit-transition: 0.2s ease-in;
+	   -moz-transition: 0.2s ease-in;
+	     -o-transition: 0.2s ease-in;
+	        transition: 0.2s ease-in; 	
+}
+
+.top-header li a:hover {
+	background-color: #CF2200;
+	color: white;
+}
+
+/********************************************************************
+	Countdown Style
+*********************************************************************/
+
+#countdown { /* Countdown digits */
+	font: 120px 'Roboto Condensed', sans-serif;
+	font-weight: 700;
+	height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+
+	z-index: 995;
+}
+
+#counttype { /* Days, Hours, etc. */
+	font-size: 18px;
+	margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+	text-transform: uppercase;
+	
+    z-index: 995;
+}
+
+#counttype p {
+	display: inline-block;
+	width: 155px;
+}
+
+#counttype span {
+	display: inline-block;
+	width: 0;
+}
+
+/********************************************************************
+	Countdown Internal classes
+*********************************************************************/
+
+.position {
+	position: relative;
+	display: inline-block;
+	width: 60px; 
+	height: 120px;
+	padding-top: 10px;	
+	overflow: hidden;
+}
+
+.position:first-child{
+	padding-left: 15px;
+}
+.position:last-child{
+	padding-right: 15px;
+}
+
+.digit {
+	position: absolute;
+	display: block;
+	width: 60px;
+	text-align: center;
+}
+
+.countdownSep {
+	display: inline-block;
+	width: 5px;
+}
+
+.static {/* Please do not remove */}
+
+/********************************************************************
+	Mediaqueries
+*********************************************************************/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+	.arrow-wrap {
+		height: 80px;
+	}
+
+	.arrow-wrap a {	
+		width: 80px;
+		height: 80px;
+		background-size: 80px;
+	}
+	
+	a.arrow-up:hover {
+		background-position: 0 -80px;
+	}
+
+	a.arrow-down:hover {
+		background-position: 0 80px;
+	}
+}
+
+@media (max-width: 979px) {
+
+	.sb-email,.sb-submit {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.sb-inner {
+		padding: 20px 25px;
+	}
+
+	.sb-submit {
+		margin-top: 15px;
+	}
+	
+	#ismobile {
+		display: none;
+	}	
+}
+
+@media (max-width: 767px) {
+
+	.home-inner {
+		padding-top: 30px;
+	}
+	
+	p.logo {
+		font-size: 50px;
+	}
+	
+	h1 {
+		font-size: 50px;
+		line-height: 50px;
+		margin-top: 10px;
+	}
+	
+	h2 {
+		font-size: 25px;
+		line-height: 25px;
+	}
+
+}

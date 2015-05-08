@@ -1,0 +1,25 @@
+body {
+	background-color: black;
+}
+
+.getintouch {
+	background-color: none;
+	color: white;
+}
+
+.sb-inner,
+.top-header,
+a.arrow-down, a.arrow-up {
+	background-color: black;
+	color: white;
+}
+
+.top-header li a,
+.top-header li a:hover {
+	color: white;
+}
+
+.vegas-overlay {
+	display: none;
+}
+

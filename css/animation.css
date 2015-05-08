@@ -1,0 +1,136 @@
+/********************************************************************
+	Keyframes Animation
+*********************************************************************/
+
+@-webkit-keyframes showDown {
+	from {-webkit-transform: translateY(-60px)}
+    to {-webkit-transform: translateY(0)}	
+}
+
+@-moz-keyframes showDown {
+	from {-moz-transform: translateY(-60px)}
+	to {-moz-transform: translateY(0)}
+}
+
+@-o-keyframes showDown {
+	from {-ms-transform: translateY(-60px)}
+	to {-ms-transform: translateY(0)}
+}
+
+@keyframes showDown {
+	from {transform: translateY(-60px)}
+	to {transform: translateY(0)}
+}
+
+@-webkit-keyframes hideDown {
+	from {-webkit-transform: translateY(0)}
+	to {-webkit-transform: translateY(40px)}
+}
+
+@-moz-keyframes hideDown {
+	from {-moz-transform: translateY(0)}
+	to {-moz-transform: translateY(40px)}
+}
+
+@-o-keyframes hideDown {
+	from {-o-transform: translateY(0)}
+	to {-o-transform: translateY(40px)}
+}
+
+@keyframes hideDown {
+	from {transform: translateY(0)}
+	to {transform: translateY(40px)}
+}
+
+@-webkit-keyframes showUp {
+	from {-webkit-transform: translateY(40px)}
+	to {-webkit-transform: translateY(0)}
+}
+
+@-moz-keyframes showUp {
+	from {-moz-transform: translateY(40px)}
+	to {-moz-transform: translateY(0)}
+}
+
+@-o-keyframes showUp {
+	from {-o-transform: translateY(40px)}
+	to {-o-transform: translateY(0)}
+}
+
+@keyframes showUp {
+	from {transform: translateY(40px)}
+	to {transform: translateY(0)}
+}
+
+@-webkit-keyframes hideUp {
+	from {-webkit-transform: translateY(0)}
+	to {-webkit-transform: translateY(-60px)}
+}
+
+@-moz-keyframes hideUp {
+	from {-moz-transform: translateY(0)}
+	to {-moz-transform: translateY(-60px)}
+}
+
+@-o-keyframes hideUp {
+	from {-o-transform: translateY(0)}
+	to {-o-transform: translateY(-60px)}
+}
+
+@keyframes hideUp {
+	from {transform: translateY(0)}
+	to {transform: translateY(-60px)}
+}
+
+/********************************************************************
+	Animation Classes and Duration
+*********************************************************************/
+
+.showDown {
+	-webkit-animation-name: showDown;
+	   -moz-animation-name: showDown;
+	     -o-animation-name: showDown;
+	        animation-name: showDown;
+}
+
+.hideDown {
+	-webkit-animation-name: hideDown;
+	   -moz-animation-name: hideDown;
+	     -o-animation-name: hideDown;
+	        animation-name: hideDown;
+}
+
+.showUp {
+	-webkit-animation-name: showUp;
+	   -moz-animation-name: showUp;
+	     -o-animation-name: showUp;
+	        animation-name: showUp;
+}
+
+.hideUp {
+	-webkit-animation-name: hideUp;
+	   -moz-animation-name: hideUp;
+	     -o-animation-name: hideUp;
+	        animation-name: hideUp;
+}
+
+.fade1,.fade2{
+	-webkit-animation-duration: 1s;
+	   -moz-animation-duration: 1s;
+	    -ms-animation-duration: 1s;
+	     -o-animation-duration: 1s;
+	        animation-duration: 1s;
+}
+
+/********************************************************************
+	Mediaqueries (hide animation)
+*********************************************************************/
+
+@media (max-width: 979px) {
+	.showDown,.hideDown,.showUp,.hideUp {
+	-webkit-animation-name: none;
+	   -moz-animation-name: none;
+	     -o-animation-name: none;
+	        animation-name: none;		
+	}
+}
